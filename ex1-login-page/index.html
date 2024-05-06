@@ -9,8 +9,64 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <!-- Start coding here -->
+<body class="flex">
+  <div class="flex flex-col w-screen h-screen bg-slate-200 justify-center items-center text-left">
+    <form class="flex flex-col gap-2 bg-white h-fit w-fit rounded-xl px-8 py-4">
+      <div class="font-bold text-xl text-zinc-600">Login to Website</div>
+      <div class="flex flex-row items-center justify-between gap-1">
+        <div class="flex">Email</div>
+        <input type="email" 
+        class=" w-[230px] 
+        font-bold 
+        border-2 border-zinc-600
+        text-[14px] p-2
+        hover:border-violet-300
+        focus:border-violet-500
+        focus:outline-none
+        rounded-lg
+        " 
+        >
+        </input>
+      </div>
+      <div class="flex flex-row items-center justify-between gap-1">
+        <div class="flex">Password</div>
+        <input type="text" 
+        class=" w-[230px] 
+        font-bold 
+        border-2 border-zinc-600
+        text-[14px] p-2
+        hover:border-violet-300
+        focus:border-violet-500
+        focus:outline-none
+        rounded-lg
+        " 
+        >
+        </input>
+      </div>
+      <div class="flex flex-row justify-around font-bold text-[16px] gap-4">
+        <button class="w-36 
+        p-2 
+        rounded-full 
+        bg-violet-500 
+        text-white
+        active:bg-violet-600
+        hover:bg-violet-400
+        focus:ring-4 ring-violet-300">
+          Sign In
+        </button>
+        <button class="w-36 
+        p-2 
+        rounded-full 
+        bg-white
+        text-violet-500
+        hover:bg-violet-100
+        active:text-violet-600
+        focus:ring-4 ring-violet-300">
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
